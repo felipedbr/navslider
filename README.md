@@ -4,4 +4,4 @@
 <b>Site:</b> http://navslider.darkmekdia.com.br<br />
 <b>Developer:</b> Felipe Dumont
 
-Please don't remove the copyright, its a OpenSource project but has ben created by Felipe Dumont.
+Please don't remove the copyright, it a OpenSource project created by Felipe Dumont.

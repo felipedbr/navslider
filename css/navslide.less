@@ -1,0 +1,92 @@
+/* Create by: Felipe Dumont
+/* Version: 1.0
+/* Website: www.darkmedia.com.br
+
+
+/* Colors */
+
+@body-color: #F0F0F0;
+@menu-btn-color: #333;
+@menu-link: #333;
+
+/* Animations */
+.transition-2s {transition: .2s ease-in-out; -moz-transition: .2s ease-in-out; -webkit-transition: .2s ease-in-out; -ms-transition: .2s ease-in-out; -o-transition: .2s ease-in-out;  }
+
+
+/* Menu */
+.menu-container {
+    
+    &:hover {
+        .menu-slide {
+            -o-transform: translate(270px,0);
+            -moz-transform: translate(270px,0);
+            -ms-transform: translate(270px,0);
+            -webkit-transform: translate(270px,0);
+            transform: translate(270px,0);
+            opacity: 1;
+        }
+    }
+    
+    .menu-btn {
+        color: @menu-btn-color;
+        position: fixed;
+        top: 10px;
+        left: :10px;
+        cursor: pointer;
+        z-index: 10000;
+        font-size: 19px;
+        text-decoration: none;
+        
+        &:hover {
+            color: lighten(@menu-btn-color, 20%);
+        }
+    }
+    
+    .menu-slide {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #e0e0e0;
+        height: 100%;
+        left: -270px;
+        position: fixed;
+        top: 0;
+        width: 270px;
+        overflow-y: auto;
+        z-index:10000;
+        -moz-transition:0.3s ease-in-out;
+        -o-transition:0.3s ease-in-out;
+        -webkit-transition:6s ease-in-out;
+        transition:0.3s ease-in-out;
+        position: fixed;
+        opacity: 0;
+        
+        .menu-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+            .menu-item {
+                a {
+                    padding: 8px;
+                    display: block;
+                    text-decoration: none;
+                    color: @menu-link;
+                    .transition-2s;
+                    font-weight: 300;
+                    font-family: 'Roboto',sans-serif;
+                    
+                    &:hover {
+                        color:#FFF;
+                        background-color: #333;
+                        .transition-2s;
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+    
+}
